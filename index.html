@@ -17,9 +17,18 @@
     {
       font-size: x-large;
       font-family: verdana,sans-serif,arial;
+      color: White;
+      text-align: center;
+      margin: 0px 20px 0px 0px;  
+      padding: 10px 10px 10px 10px;  
+    } 
+  h2
+    {
+      font-size: x-large;
+      font-family: verdana,sans-serif,arial;
       background-color: #85C1E9;
       color: #34495E;
-      text-align: center;
+      text-align: right;
       margin: 0px 20px 0px 0px;  
       padding: 10px 10px 10px 10px;  
     } 
@@ -35,50 +44,41 @@
      	margin: 10px 10px 10px 10px ;
      	width: 40%;
     }    
-      .con{        
-        display: flex;
-        flex-direction: coloumn;
-        margin: 5px 5px 5px 5px;        
-      }
+      .con{
+	display: flex;
+	flex-direction: coloumn;
+	}
       .con1{
-        display: flex;
-        flex-direction: row;
-        margin: 30px 0px 30px 50px;        
-        }
+	background-color: #85C1E9;
+	height: 10%;
+	width: 100%;
+	}
+	.con2{
+	display: flex;
+	flex-direction: row;
+	}
       .but{
-          background-color: #85C1E9;
-          text-align: left;
+          background-color: white;
+          text-align: right;
           height: 40px;
-          width: 120px;
-	  margin: 30px 0px 50px 50px; 
+          width: 120px;	  
         }    	
       </style>
   </head>
   <body>
-	<div class="con">   
-        <img class="Profilepic" src="Jitesh.jpg" height="600px" width="500px"> 
-	   <div class="">
 		<div class="con1">
+			<a href="about.html"><h2>About Me</h2></a>
+		</div>
+		<div class="con">
+			<img class="Profilepic" src="Jitesh.jpg" height="500px"> 	  
+		<div class="con2">
         		<h1>Jitesh Kumar Verma</h1> <br>
         		<h1>Welcomes You</h1> 
+			<p> Slim Profile, easy to handle and loaded with ease.<br>This is the one you have been waiting for</p>
 		</div>
-		<p class="b">EXPERIENCE: <br>
-				-Fresher <br>
-			     QUALIFICATIONS: <br>
-				-Student of Goa college of Engineering <br>
-				 Information Technology(3rd Year) <br>
-			     SKILL: <br>
-				-Knowledge of Computer Basic Operation <br>
-				-Knowledge of Programming <br>
-			     STRENGTH: <br>
-       				-Positive attitude <br>
-				-Hard working <br>
-				-Willingness to learn new things <br><br>
-			     Contact: +91-7796861001 <br>
-			     E-mail: vermajitu1495@gmail.com <br><br>
-			     Slim Profile, easy to handle and loaded with ease.<br>This is the one you have been waiting for</p>
-      		<input class="but" type="button" value="Learn more -->"/>
-	    </div>          	
-	</div>
+		</div>
+		<div class="con1">
+			<h2><input class="but" type="button" value="Learn more -->"/></h2>	
+		</div>	  			
   </body>
 </html>
