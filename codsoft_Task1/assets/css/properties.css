@@ -1,0 +1,83 @@
+/* General Calculator Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f4f4f9;
+}
+
+.calculator {
+    width: 300px;
+    background: #1bb2f4;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Display Styling */
+.display {
+    background: white;
+    color: #333;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.display input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 1.5rem;
+    outline: none;
+    text-align: right;
+}
+
+/* Buttons Container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+.btn {
+    background: #0863f2;
+    border: none;
+    font-size: 1.2rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.btn:active {
+    background: #ccc;
+}
+
+/* Highlight for Special Buttons */
+.btn:nth-child(4n) { /* Operators */
+    background: #0863f2;
+}
+
+.btn:nth-child(4n):hover {
+    background: #0863f2;
+}
+
+.btn:nth-child(16) { /* Equal Sign */
+    background: #0863f2;
+    color: white;
+}
+
+.btn:nth-child(16):hover {
+    background: #0863f2;
+}
